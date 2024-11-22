@@ -1,0 +1,16 @@
+
+{
+    "name": "brbr-game2",
+    "short_name": "brbr-game2",
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "description": "A fishing and ship upgrade game.",
+    "icons": [
+        {
+            "src": "assets/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

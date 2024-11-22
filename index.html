@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brbr-game2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-menu">
+        <h1>brbr-game2</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="showInstructions()">Instructions</button>
+        <button onclick="showSettings()">Settings</button>
+    </div>
+    <div id="game-container" style="display:none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        function startGame() {
+            document.querySelector('.main-menu').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            gameLoop();
+        }
+
+        function showInstructions() {
+            alert("Catch fish, upgrade your ships, and compete with friends!");
+        }
+
+        function showSettings() {
+            alert("Settings are under development!");
+        }
+    </script>
+</body>
+</html>
